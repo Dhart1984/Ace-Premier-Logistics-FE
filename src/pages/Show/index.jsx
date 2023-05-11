@@ -1,6 +1,6 @@
 
 
-function ShowPage(){
+function ShowPage(props){
     return(
         <div>
             <h1>ShowPage</h1>
