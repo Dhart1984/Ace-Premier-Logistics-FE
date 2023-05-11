@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <SignUp/>
   
       <Main />
       <h1>App.js on dev branch</h1>
