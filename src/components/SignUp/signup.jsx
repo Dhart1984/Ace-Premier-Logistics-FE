@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
-import {getApplicant, createApplicant} from "../../../utilities/applicant-service.js"
+import {createApplicant} from "../../utilities/applicant-service.js"
+// import pick from ""
 import {
     Card,
     Input,
@@ -45,7 +46,7 @@ import {
         </Typography>
         <form onSubmit={handleSubmit} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
           <div className="mb-4 flex flex-col gap-6">
-            <Input size="lg" label="First" />
+            <Input size="lg" label="First Name" />
             <Input size="lg" label="Last Name" />
             <Input size="lg" label="Email" />
             {/* <Input type="password" size="lg" label="Password" /> */}
