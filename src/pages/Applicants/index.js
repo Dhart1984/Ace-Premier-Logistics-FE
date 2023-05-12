@@ -1,13 +1,25 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { getApplicant } from '../../utilities/applicant-service'
 
-const Applicant = (props) => {
+export default function Applicant(props) {
 
     const [isLoading, setIsLoading] = useState(true)
     const [applicants, setApplicants] = useState([])
 
     const BASE_URL = "http://localhost:4000/applicants";
-    // this base url variable will be replaced with an environmental variables once we migrate the fetch to service modules 
+ 
+    const [applicant, setApplicant] = useState(null)
+
+    // const [count, setCount] = useState(1)
+
+ 
+    const [newForm, setNewForm] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+
+    })
 
     const getApplicant = async () => {
         try {
@@ -30,9 +42,9 @@ const Applicant = (props) => {
 
     console.log(`There are ${applicants.length} people available to render`)
 
-    return ( isLoading?(<h1> loading</h1>) : loaded()  )
-      
+    return (isLoading ? (<h1> loading</h1>) : loaded())
+
 }
 
-export default Applicant
+
 
