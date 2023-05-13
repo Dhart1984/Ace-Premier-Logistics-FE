@@ -16,7 +16,7 @@ function App() {
   
   
       <Main />
-      <h1>App.js on dev branch</h1>
+     
   
     </div>
   );

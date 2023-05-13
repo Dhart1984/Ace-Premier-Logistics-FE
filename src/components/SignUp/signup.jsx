@@ -43,18 +43,18 @@ import {
      
       return (
         <Card color="transparent" shadow={false}>
-        <Typography variant="h4" color="blue-gray">
+        <Typography variant="h4" color="white">
           Sign Up/Register
         </Typography>
-        <Typography color="gray" className="mt-1 font-normal">
+        <Typography color="white" className="mt-1 font-normal">
           Enter your details to register.
         </Typography>
         <form onSubmit={handleSubmit} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
           <div className="mb-4 flex flex-col gap-6">
-            <Input onChange={handleChange} name='firstName' value={newForm.firstName} size="lg" label="First Name" />
-            <Input onChange={handleChange} name='lastName' value={newForm.lastName} size="lg" label="Last Name" />
+            <Input onChange={handleChange} name='firstName' value={newForm.firstName} size="lg" label="First Name" color="white"/>
+            <Input onChange={handleChange} name='lastName' value={newForm.lastName} size="lg" label="Last Name"color="white"/>
             
-            <Input onChange={handleChange} name='email' value={newForm.email} size="lg" label="Email" />
+            <Input onChange={handleChange} name='email' value={newForm.email} size="lg" label="Email" color="white"/>
             
             
             {/* <Input type="password" size="lg" label="Password" /> */}

@@ -13,7 +13,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function NavList() {
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
+      {/* <Typography
         as="li"
         variant="small"
         color="blue-gray"
@@ -22,7 +22,7 @@ function NavList() {
         <Link to="/" className="flex items-center hover:text-blue-500 transition-colors">
           Home
         </Link>
-      </Typography>
+      </Typography> */}
       <Typography
         as="li"
         variant="small"
@@ -90,7 +90,10 @@ export default function Example() {
           variant="h6"
           className="mr-4 cursor-pointer py-1.5"
         >
-          Ace Premier Logistics
+        <Link to="/" className="flex items-center hover:text-blue-500 transition-colors">
+        myDSP
+        </Link>
+         
         </Typography>
         <div className="hidden lg:block">
           <NavList />
