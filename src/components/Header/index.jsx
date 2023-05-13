@@ -29,9 +29,9 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+        <Link to="/about" className="flex items-center hover:text-blue-500 transition-colors">
           About
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -60,7 +60,17 @@ function NavList() {
         className="p-1 font-medium"
       >
         <Link to="/dashboard" className="flex items-center hover:text-blue-500 transition-colors">
-          Sign-In
+          Dash Board
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <Link to="/sign-in" className="flex items-center hover:text-blue-500 transition-colors">
+          existing user signin
         </Link>
       </Typography>
     </ul>

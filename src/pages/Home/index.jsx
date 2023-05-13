@@ -38,7 +38,7 @@ export default function Example() {
 
             </div>
             <div className="w-1/2 flex items-center justify-center">
-                <h1 className="text-4xl font-bold">We're looking for talented Drivers. Apply within.</h1>
+                <h1 className="text-4xl font-bold">We're looking for talented Drivers. <br></br><br></br>You're looking for you're next oppurtunity.<br></br> <br></br>Let's hit the road. </h1>
             </div>
         </div>
     );

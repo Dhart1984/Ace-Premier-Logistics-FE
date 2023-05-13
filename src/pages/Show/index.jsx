@@ -2,6 +2,14 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
 import { getApplicant, deleteApplicant} from '../../utilities/applicant-service'
 import {  useNavigate } from 'react-router-dom'
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button
+} from "@material-tailwind/react";
 
 const Show = () => {
   const [applicant, setApplicant] = useState(null)
@@ -27,22 +35,24 @@ const Show = () => {
 // conditionally render either a person's data or a loading message
 
 const loaded = () => (
-    <div className="applicant">
-        <h1>Show Page</h1>
-        <h2>{applicant.firstName}</h2>
-        <h2>{applicant.lastName}</h2>
-        <div>
-        <button>{applicant.reviewed}</button>
-        </div>
-        <div>
-            <button className='delete' onClick={handleDelete}>
-                Remove Person
-            </button>
-        </div>
-       
-
-        {/* <img src={person.image} alt={person.name+" image"} /> */}
-        </div>
+  <Card className="mt-6 w-96">
+      <CardHeader color="blue-gray" className="relative h-56">
+        <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1024,h_683/https://warehouse.ninja/wp-content/uploads/2021/11/amazon-delivery-van-1024x683.jpg" alt="img-blur-shadow" layout="fill" />
+      </CardHeader>
+      <CardBody>
+        <Typography variant="h5" color="blue-gray" className="mb-2">
+          {applicant.firstName}
+        </Typography>
+        <Typography>
+        {applicant.lastName}
+        </Typography>
+      </CardBody>
+      <CardFooter className="pt-0">
+        <Button className='delete' onClick={handleDelete}>
+        Delete Applicant</Button>
+      </CardFooter>
+    </Card>
+    
 )
 
 const loading = () => {
