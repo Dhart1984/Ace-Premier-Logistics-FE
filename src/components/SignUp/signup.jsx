@@ -11,20 +11,21 @@ import {
 
    
   export default function SignUp() {
-    const [newForm, setNewForm] = useState()
+    const [newForm, setNewForm] = useState({
+      firstName: "",
+      lastName: "",
+      email: "",
+  })
+   
        // handleChange function for form
-       const handleChange = (e) => {
-        setNewForm({ ...newForm, [e.target.firstName]: e.target.value, [e.target.lastName]: e.target.value, [e.target.email]: e.target.value  });
-      };
-     
-      const handleSubmit = async (e) => {
+       const handleSubmit = async (e) => {
         // prevents the page from refreshing / redirecting request to external source
         e.preventDefault()
         try {
             // pass local state (after submit) to API utility service
             await createApplicant(newForm)
             // after async process is complete, set loading to true if no error is returned and clear out form
-            // setIsLoading(true)
+          
             setNewForm({
                 firstName: "",
                 lastName: "",
@@ -34,10 +35,14 @@ import {
             console.log(err)
         }
     }
-
-  
-    return (
-      <Card color="transparent" shadow={false}>
+    
+    const handleChange = (e) => {
+        console.log(newForm)
+        setNewForm({ ...newForm, [e.target.name]: e.target.value, });
+      };
+     
+      return (
+        <Card color="transparent" shadow={false}>
         <Typography variant="h4" color="blue-gray">
           Sign Up/Register
         </Typography>
@@ -46,9 +51,12 @@ import {
         </Typography>
         <form onSubmit={handleSubmit} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
           <div className="mb-4 flex flex-col gap-6">
-            <Input size="lg" label="First Name" />
-            <Input size="lg" label="Last Name" />
-            <Input size="lg" label="Email" />
+            <Input onChange={handleChange} name='firstName' value={newForm.firstName} size="lg" label="First Name" />
+            <Input onChange={handleChange} name='lastName' value={newForm.lastName} size="lg" label="Last Name" />
+            
+            <Input onChange={handleChange} name='email' value={newForm.email} size="lg" label="Email" />
+            
+            
             {/* <Input type="password" size="lg" label="Password" /> */}
           </div>
           <Checkbox
@@ -71,7 +79,7 @@ import {
             }
             containerProps={{ className: "-ml-2.5" }}
           />
-          <Button className="mt-6" fullWidth>
+          <Button type='submit' className="mt-6" fullWidth>
             Register
           </Button>
           <Typography color="gray" className="mt-4 text-center font-normal">
@@ -86,4 +94,7 @@ import {
         </form>
       </Card>
     );
+    
+  
+    
   }
