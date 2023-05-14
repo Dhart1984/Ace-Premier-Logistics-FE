@@ -8,6 +8,7 @@ import { getApplicant } from '../../utilities/applicant-service'
 const Edit = () => {
     const [applicant, setApplicant] = useState(null)
     const { id } = useParams()
+    const [editForm, setEditForm] = useState({name: "", image: "", title: ""})
     
     const navigate = useNavigate()
 
