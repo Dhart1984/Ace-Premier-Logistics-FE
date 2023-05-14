@@ -18,11 +18,11 @@ export default function GMaps() {
 }
 
 function Map() {
-    const center = useMemo(() => ({ lat: 33, lng: -84 }), []);
+    const center = useMemo(() => ({ lat: 33.69416, lng: -84.61744 }), []);
 
     return (
-      <GoogleMap zoom={20} center={center} mapContainerStyle={{ height: "500px" }}>
-        <Marker position={{ lat: 33, lng: -84 }} />
+      <GoogleMap zoom={11.51} center={center} mapContainerStyle={{ height: "500px" }}>
+        <Marker position={{ lat: 33.69416, lng: -84.61744 }} />
       </GoogleMap>
     );
 }
