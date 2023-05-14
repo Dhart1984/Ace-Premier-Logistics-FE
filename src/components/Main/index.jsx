@@ -5,6 +5,7 @@ import Home from "../../pages/Home"
 import About from "../../pages/About/about"
 import ThankYou from "../../pages/ThankYou/thankyou"
 import SignIn from "../../pages/SignIn/signin"
+import Edit from "../../pages/Edit/edit"
 
 const Main = (props) => {
   return (
@@ -16,6 +17,7 @@ const Main = (props) => {
         <Route path="/sign-in" element={<SignIn/>}/>
         <Route path="/thanks" element={<ThankYou/>}/>
         <Route path="/applicant/:id" element={<ShowPage />} />
+        <Route path="/applicant/:id/edit" element={<Edit />} />
       </Routes>
     </main>
   )

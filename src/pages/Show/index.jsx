@@ -90,7 +90,9 @@ const handleDelete = async () => {
 
 
 
-return applicant ? loaded() : loading()
+return <div>
+  {applicant ? loaded() : loading()}
+</div>
 
 
 
