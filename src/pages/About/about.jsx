@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {
     Card,
     CardHeader,
@@ -43,35 +44,35 @@ import {
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
                 <CheckIcon strokeWidth={2} className="h-3 w-3" />
               </span>
-              <Typography className="font-normal">Benefit 1</Typography>
+              <Typography className="font-normal">Competitive Compensation</Typography>
             </li>
             <li className="flex items-center gap-4">
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
                 <CheckIcon strokeWidth={2} className="h-3 w-3" />
               </span>
-              <Typography className="font-normal">Benefit 2</Typography>
+              <Typography className="font-normal">PTO & OverTime</Typography>
             </li>
             <li className="flex items-center gap-4">
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
                 <CheckIcon strokeWidth={2} className="h-3 w-3" />
               </span>
-              <Typography className="font-normal">Benefit 3</Typography>
+              <Typography className="font-normal">Independence: spend your day on the road, delivering smiles!</Typography>
             </li>
             <li className="flex items-center gap-4">
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
                 <CheckIcon strokeWidth={2} className="h-3 w-3" />
               </span>
-              <Typography className="font-normal">Benefit 4</Typography>
+              <Typography className="font-normal">Stay Active: You'll be on the move during your shift</Typography>
             </li>
             <li className="flex items-center gap-4">
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
                 <CheckIcon strokeWidth={2} className="h-3 w-3" />
               </span>
-              <Typography className="font-normal">Benefit 5</Typography>
+              <Typography className="font-normal">Professional Growth & Upward Mobility</Typography>
             </li>
           </ul>
         </CardBody>
-        <CardFooter className="mt-12 p-0">
+        <Link to="/" className="mt-12 p-0">
           <Button
             size="lg"
             color="white"
@@ -81,8 +82,14 @@ import {
           >
             Apply Now
           </Button>
-        </CardFooter>
+        </Link>
       </Card>
       </div>
     );
   }
+
+  <Link to="/thanks" className="mt-6" style={{ width: '100%' }}>
+          <Button type="submit" fullWidth>
+            Register
+          </Button>
+        </Link>
