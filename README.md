@@ -9,3 +9,4 @@ IceBox:
 
 1)Adding more Schemas to my model. An Amazon warehouse schema for every amazon warehouse in the country. A warehouse has MANY Companies. A companies Schema belongs to one warehouse and has MANY applicants. An applicant can apply to many companies and many warehouses. 
 2)The overall vision for this app is for a business owner to source potential canidates, get them through to the amazon hiring portal without ever speaking to them.
+<img width="1440" alt="Screen Shot 2023-05-15 at 10 31 13 AM" src="https://github.com/Dhart1984/Ace-Premier-Logistics-FE/assets/126024205/feba1cc9-664d-4f34-adb6-2ce8c5664e65">
