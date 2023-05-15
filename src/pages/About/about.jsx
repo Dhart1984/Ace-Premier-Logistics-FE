@@ -44,31 +44,31 @@ import {
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
                 <CheckIcon strokeWidth={2} className="h-3 w-3" />
               </span>
-              <Typography className="font-normal">Benefit 1</Typography>
+              <Typography className="font-normal">Great Pay: Weekly</Typography>
             </li>
             <li className="flex items-center gap-4">
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
                 <CheckIcon strokeWidth={2} className="h-3 w-3" />
               </span>
-              <Typography className="font-normal">Benefit 2</Typography>
+              <Typography className="font-normal">Paid Time Off and plenty of Overtime during Peak Season</Typography>
             </li>
             <li className="flex items-center gap-4">
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
                 <CheckIcon strokeWidth={2} className="h-3 w-3" />
               </span>
-              <Typography className="font-normal">Benefit 3</Typography>
+              <Typography className="font-normal">Independence: spend majority of your day on the road</Typography>
             </li>
             <li className="flex items-center gap-4">
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
                 <CheckIcon strokeWidth={2} className="h-3 w-3" />
               </span>
-              <Typography className="font-normal">Benefit 4</Typography>
+              <Typography className="font-normal">Professional Growth & Upward Mobility </Typography>
             </li>
             <li className="flex items-center gap-4">
               <span className="rounded-full border border-white/20 bg-white/20 p-1">
                 <CheckIcon strokeWidth={2} className="h-3 w-3" />
               </span>
-              <Typography className="font-normal">Benefit 5</Typography>
+              <Typography className="font-normal">Health Insurance</Typography>
             </li>
           </ul>
         </CardBody>

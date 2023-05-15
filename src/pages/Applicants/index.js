@@ -20,6 +20,7 @@ const Applicants = (props) => {
     const [isLoading, setIsLoading] = useState(true)
 
     const BASE_URL = "http://localhost:4000/applicants";
+    
     const getApplicant = async () => {
         try {
             const response = await getApplicants()
@@ -32,13 +33,14 @@ const Applicants = (props) => {
         }
     }
 
-    useEffect(() => { getApplicant() }, [])
+    // useEffect(() => { getApplicant() }, [])
 
 
 
     async function handleRequest() {
         try {
             const apiResponse = await getApplicants()
+            console.log(apiResponse)
             setApplicants(apiResponse)
             setIsLoading(false)
         } catch (err) {
