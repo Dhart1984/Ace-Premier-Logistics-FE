@@ -1,5 +1,9 @@
 myDSP
 
+***TECHNOLOGIES USED***
+FE: React.js, Node, Tailwind, Material Tailwind, Google Maps API
+BE: Mongoose, Express, 
+
 myDSP is a job board web-application built using the MERN stack. Its purpose is to quickly gather and store relevant information about potential employees in a simple, efficient  and easily accesible manner.
 <img width="1440" alt="Screen Shot 2023-05-15 at 8 14 20 AM" src="https://github.com/Dhart1984/Ace-Premier-Logistics-FE/assets/126024205/198ee18a-1b1a-4528-bcda-18ccd13fca53">
 <img width="1440" alt="Screen Shot 2023-05-15 at 8 14 31 AM" src="https://github.com/Dhart1984/Ace-Premier-Logistics-FE/assets/126024205/915322a2-b6b2-48f9-bfe1-4d36c28db504">
